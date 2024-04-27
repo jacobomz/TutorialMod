@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import tutorialmod.example.examplemod.TutorialMod;
+import tutorialmod.example.examplemod.block.custom.BlueberryCropBlock;
 import tutorialmod.example.examplemod.block.custom.GemLampBlock;
 import tutorialmod.example.examplemod.item.ModCreativeModeTab;
 import tutorialmod.example.examplemod.item.ModItems;
@@ -56,6 +58,10 @@ public class ModBlocks {
             () -> new GemLampBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .sound(SoundType.GLASS).strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(GemLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)
+                    .sound(SoundType.GRASS)));
 
     /**
      * Registra el bloque
