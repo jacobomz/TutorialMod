@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorialmod:gem_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:gem",
+    "count": 9
+  }
+}

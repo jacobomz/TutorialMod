@@ -1,10 +1,11 @@
 {
   "item.tutorialmod.gem": "Gem",
-  "item.tutorialmod.raw_gem": "Raw gem",
-  "block.tutorialmod.gem_block": "Gem block",
-  "block.tutorialmod.gem_ore": "Gem ore",
-  "block.tutorialmod.deepslate_gem_ore": "Deepslate gem ore",
-  "block.tutorialmod.netherrack_gem_ore": "Nether gem ore",
-  "block.tutorialmod.endstone_gem_ore": "End gem ore",
+  "item.tutorialmod.raw_gem": "Raw Gem",
+  "block.tutorialmod.gem_block": "Gem Block",
+  "block.tutorialmod.gem_lamp": "Gem Lamp",
+  "block.tutorialmod.gem_ore": "Gem Ore",
+  "block.tutorialmod.deepslate_gem_ore": "Deepslate Gem Ore",
+  "block.tutorialmod.netherrack_gem_ore": "Nether Gem Ore",
+  "block.tutorialmod.endstone_gem_ore": "End Gem Ore",
   "itemGroup.tutorialtab": "Gem Mod Tab"
 }

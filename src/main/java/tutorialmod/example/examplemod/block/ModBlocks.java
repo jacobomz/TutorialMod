@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import tutorialmod.example.examplemod.TutorialMod;
+import tutorialmod.example.examplemod.block.custom.GemLampBlock;
 import tutorialmod.example.examplemod.item.ModCreativeModeTab;
 import tutorialmod.example.examplemod.item.ModItems;
 
@@ -48,8 +49,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ENDSTONE_GEM_ORE = registerBlock("endstone_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.STONE).strength(6f),
+                    .sound(SoundType.STONE).strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> GEM_LAMP = registerBlock("gem_lamp",
+            () -> new GemLampBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.GLASS).strength(6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(GemLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.TUTORIAL_TAB);
 
     /**
      * Registra el bloque

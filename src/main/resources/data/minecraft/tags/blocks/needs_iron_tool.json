@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:gem_ore",
+    "tutorialmod:deepslate_gem_ore",
+    "tutorialmod:netherrack_gem_ore",
+    "tutorialmod:endstone_gem_ore",
+    "tutorialmod:gem_block"
+  ]
+}
